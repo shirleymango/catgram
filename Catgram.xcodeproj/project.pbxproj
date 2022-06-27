@@ -19,6 +19,8 @@
 		858CB4F7286A4972005805D1 /* CatgramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB4F6286A4972005805D1 /* CatgramTests.m */; };
 		858CB501286A4972005805D1 /* CatgramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB500286A4972005805D1 /* CatgramUITests.m */; };
 		858CB503286A4972005805D1 /* CatgramUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB502286A4972005805D1 /* CatgramUITestsLaunchTests.m */; };
+		858CB511286A6026005805D1 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB510286A6026005805D1 /* LoginController.m */; };
+		858CB514286A60CF005805D1 /* homeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB513286A60CF005805D1 /* homeFeedViewController.m */; };
 		9FC8B1B634384E6F971A7455 /* Pods_Catgram_CatgramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1AB55C8BEBB1DA9963A3EE /* Pods_Catgram_CatgramUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,10 @@
 		858CB4FC286A4972005805D1 /* CatgramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatgramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		858CB500286A4972005805D1 /* CatgramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatgramUITests.m; sourceTree = "<group>"; };
 		858CB502286A4972005805D1 /* CatgramUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatgramUITestsLaunchTests.m; sourceTree = "<group>"; };
+		858CB50F286A6026005805D1 /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		858CB510286A6026005805D1 /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		858CB512286A60CF005805D1 /* homeFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homeFeedViewController.h; sourceTree = "<group>"; };
+		858CB513286A60CF005805D1 /* homeFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homeFeedViewController.m; sourceTree = "<group>"; };
 		BA1AB55C8BEBB1DA9963A3EE /* Pods_Catgram_CatgramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catgram_CatgramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF877CF84DBBE3DC22F2E16 /* Pods_CatgramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatgramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -126,8 +132,12 @@
 				858CB4DD286A4971005805D1 /* SceneDelegate.h */,
 				858CB4DE286A4971005805D1 /* SceneDelegate.m */,
 				858CB4E0286A4971005805D1 /* ViewController.h */,
+				858CB50F286A6026005805D1 /* LoginController.h */,
+				858CB510286A6026005805D1 /* LoginController.m */,
 				858CB4E1286A4971005805D1 /* ViewController.m */,
 				858CB4E3286A4971005805D1 /* Main.storyboard */,
+				858CB512286A60CF005805D1 /* homeFeedViewController.h */,
+				858CB513286A60CF005805D1 /* homeFeedViewController.m */,
 				858CB4E6286A4972005805D1 /* Assets.xcassets */,
 				858CB4E8286A4972005805D1 /* LaunchScreen.storyboard */,
 				858CB4EB286A4972005805D1 /* Info.plist */,
@@ -163,7 +173,6 @@
 				0304EFF1F6BA3E2EBCC0048D /* Pods-CatgramTests.debug.xcconfig */,
 				67563B1E3EFAD762962ACBED /* Pods-CatgramTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -415,8 +424,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858CB511286A6026005805D1 /* LoginController.m in Sources */,
 				858CB4E2286A4971005805D1 /* ViewController.m in Sources */,
 				858CB4DC286A4971005805D1 /* AppDelegate.m in Sources */,
+				858CB514286A60CF005805D1 /* homeFeedViewController.m in Sources */,
 				858CB4ED286A4972005805D1 /* main.m in Sources */,
 				858CB4DF286A4971005805D1 /* SceneDelegate.m in Sources */,
 			);
