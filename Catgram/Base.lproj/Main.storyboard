@@ -87,7 +87,7 @@
             <objects>
                 <viewController id="EdM-Td-VGF" customClass="homeFeedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sE7-dc-cpD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="LI4-xj-r5D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -120,9 +120,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="cZO-9U-Mjr">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Uag-z4-cUj"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="LsK-be-L8n"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Uag-z4-cUj">
+                            <connections>
+                                <action selector="didTapCancel:" destination="aPO-L7-AGp" id="sbm-uz-4wZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="LsK-be-L8n">
+                            <connections>
+                                <action selector="didTapSave:" destination="aPO-L7-AGp" id="Xzh-jd-heZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="EdM-Td-VGF" kind="show" identifier="backToHomeSegue" id="UHt-mj-35J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fb8-9W-D0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,6 +176,9 @@
             <point key="canvasLocation" x="4023.188405797102" y="91.741071428571431"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UHt-mj-35J"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="insta_camera_btn" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">

@@ -44,6 +44,15 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)didTapCancel:(id)sender {
+    [self performSegueWithIdentifier:@"backToHomeSegue" sender:nil];
+}
+
+
+- (IBAction)didTapSave:(id)sender {
+    [self performSegueWithIdentifier:@"backToHomeSegue" sender:nil];
+}
+
 /*
 #pragma mark - Navigation
 
