@@ -26,7 +26,7 @@
         <!--Login Controller-->
         <scene sceneID="7RX-R7-Gkg">
             <objects>
-                <viewController id="9cN-SJ-SJ7" customClass="LoginController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9cN-SJ-SJ7" customClass="LoginController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J1U-1X-CPj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,16 +51,16 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ki9-ZE-i0f">
-                                <rect key="frame" x="56" y="497" width="64" height="31"/>
+                                <rect key="frame" x="56" y="497" width="111" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log in"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                 <connections>
                                     <action selector="loginUser:" destination="9cN-SJ-SJ7" eventType="touchUpInside" id="Dhh-Vl-Px0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ER-KU-a5B">
-                                <rect key="frame" x="290" y="497" width="73" height="31"/>
+                                <rect key="frame" x="259" y="497" width="104" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign up"/>
@@ -92,7 +92,13 @@
                         <viewLayoutGuide key="safeArea" id="LI4-xj-r5D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home Feed" id="tDp-SO-kDj"/>
+                    <navigationItem key="navigationItem" title="Home Feed" id="tDp-SO-kDj">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="iZh-pN-qU9">
+                            <connections>
+                                <action selector="didTapLogout:" destination="EdM-Td-VGF" id="ghm-fc-o4d"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qPJ-L6-WW2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,7 +107,7 @@
         <!--Navigation Controller-->
         <scene sceneID="bSy-Dg-P7r">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Zjd-Wd-kxq" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="homeNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Zjd-Wd-kxq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QVv-w6-aJU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
