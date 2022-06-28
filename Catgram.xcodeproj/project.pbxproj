@@ -21,6 +21,7 @@
 		858CB503286A4972005805D1 /* CatgramUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB502286A4972005805D1 /* CatgramUITestsLaunchTests.m */; };
 		858CB511286A6026005805D1 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB510286A6026005805D1 /* LoginController.m */; };
 		858CB514286A60CF005805D1 /* homeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB513286A60CF005805D1 /* homeFeedViewController.m */; };
+		858CB51A286BB7C6005805D1 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB519286BB7C6005805D1 /* ComposeViewController.m */; };
 		9FC8B1B634384E6F971A7455 /* Pods_Catgram_CatgramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1AB55C8BEBB1DA9963A3EE /* Pods_Catgram_CatgramUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,8 @@
 		858CB510286A6026005805D1 /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		858CB512286A60CF005805D1 /* homeFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homeFeedViewController.h; sourceTree = "<group>"; };
 		858CB513286A60CF005805D1 /* homeFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homeFeedViewController.m; sourceTree = "<group>"; };
+		858CB518286BB7C6005805D1 /* ComposeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
+		858CB519286BB7C6005805D1 /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
 		BA1AB55C8BEBB1DA9963A3EE /* Pods_Catgram_CatgramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catgram_CatgramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF877CF84DBBE3DC22F2E16 /* Pods_CatgramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatgramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -141,6 +144,8 @@
 				858CB4E6286A4972005805D1 /* Assets.xcassets */,
 				858CB4E8286A4972005805D1 /* LaunchScreen.storyboard */,
 				858CB4EB286A4972005805D1 /* Info.plist */,
+				858CB518286BB7C6005805D1 /* ComposeViewController.h */,
+				858CB519286BB7C6005805D1 /* ComposeViewController.m */,
 				858CB4EC286A4972005805D1 /* main.m */,
 			);
 			path = Catgram;
@@ -428,6 +433,7 @@
 				858CB4E2286A4971005805D1 /* ViewController.m in Sources */,
 				858CB4DC286A4971005805D1 /* AppDelegate.m in Sources */,
 				858CB514286A60CF005805D1 /* homeFeedViewController.m in Sources */,
+				858CB51A286BB7C6005805D1 /* ComposeViewController.m in Sources */,
 				858CB4ED286A4972005805D1 /* main.m in Sources */,
 				858CB4DF286A4971005805D1 /* SceneDelegate.m in Sources */,
 			);
