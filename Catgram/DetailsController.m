@@ -28,10 +28,10 @@
     
     // display date
     NSDate *createdAt = self.detailsPost.createdAt;
-    NSDateFormatter *formatterDate = [[NSDateFormatter alloc] init];
-    formatterDate.dateStyle = NSDateFormatterShortStyle;
-    NSString *date = [formatterDate stringFromDate:createdAt];
-    self.dateLabel.text = [NSString stringWithFormat:@"%@", date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM-dd-yyyy • HH:mm"];
+    NSString *newDate = [dateFormatter stringFromDate:createdAt];
+    self.dateLabel.text = [NSString stringWithFormat:@"%@", newDate];
     
     // display the caption
     self.captionLabel.text = self.detailsPost.caption;
