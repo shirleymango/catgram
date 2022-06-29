@@ -6,10 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Parse/Parse.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ComposeViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface ComposeViewController : UIViewController <PFSubclassing, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
 
 @end
 
