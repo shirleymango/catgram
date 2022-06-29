@@ -24,6 +24,7 @@
 		858CB51A286BB7C6005805D1 /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB519286BB7C6005805D1 /* ComposeViewController.m */; };
 		858CB51D286BD946005805D1 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB51C286BD946005805D1 /* Post.m */; };
 		858CB523286C5BDF005805D1 /* CatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB522286C5BDF005805D1 /* CatCell.m */; };
+		858CB526286CBD9A005805D1 /* DetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 858CB525286CBD9A005805D1 /* DetailsController.m */; };
 		9FC8B1B634384E6F971A7455 /* Pods_Catgram_CatgramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1AB55C8BEBB1DA9963A3EE /* Pods_Catgram_CatgramUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,8 @@
 		858CB51C286BD946005805D1 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		858CB521286C5BDF005805D1 /* CatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatCell.h; sourceTree = "<group>"; };
 		858CB522286C5BDF005805D1 /* CatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatCell.m; sourceTree = "<group>"; };
+		858CB524286CBD9A005805D1 /* DetailsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsController.h; sourceTree = "<group>"; };
+		858CB525286CBD9A005805D1 /* DetailsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsController.m; sourceTree = "<group>"; };
 		BA1AB55C8BEBB1DA9963A3EE /* Pods_Catgram_CatgramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catgram_CatgramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF877CF84DBBE3DC22F2E16 /* Pods_CatgramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatgramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,6 +148,8 @@
 				858CB510286A6026005805D1 /* LoginController.m */,
 				858CB4E1286A4971005805D1 /* ViewController.m */,
 				858CB4E3286A4971005805D1 /* Main.storyboard */,
+				858CB524286CBD9A005805D1 /* DetailsController.h */,
+				858CB525286CBD9A005805D1 /* DetailsController.m */,
 				858CB521286C5BDF005805D1 /* CatCell.h */,
 				858CB522286C5BDF005805D1 /* CatCell.m */,
 				858CB512286A60CF005805D1 /* homeFeedViewController.h */,
@@ -443,6 +448,7 @@
 				858CB4E2286A4971005805D1 /* ViewController.m in Sources */,
 				858CB4DC286A4971005805D1 /* AppDelegate.m in Sources */,
 				858CB514286A60CF005805D1 /* homeFeedViewController.m in Sources */,
+				858CB526286CBD9A005805D1 /* DetailsController.m in Sources */,
 				858CB51A286BB7C6005805D1 /* ComposeViewController.m in Sources */,
 				858CB523286C5BDF005805D1 /* CatCell.m in Sources */,
 				858CB4ED286A4972005805D1 /* main.m in Sources */,

@@ -12,6 +12,7 @@
 #import "SceneDelegate.h"
 #import "CatCell.h"
 #import "Post.h"
+#import "DetailsController.h"
 //#import "UIImageView+AFNetworking.h"
 
 
@@ -58,15 +59,21 @@
     sceneDelegate.window.rootViewController = loginViewController;
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"PostDetails"]) {
+        DetailsController *detailVC = [segue destinationViewController];
+        // Pass the selected object to the new view controller.
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        detailVC.detailsPost = self.arrayOfPosts[indexPath.row];
+    }
 }
-*/
+
 
 - (void)beginRefresh:(UIRefreshControl *)refreshControl {
     // construct query
