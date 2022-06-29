@@ -67,14 +67,17 @@
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     CatCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"catCell"];
     Post *post = self.arrayOfPosts[indexPath.row];
-    PFFileObject *imageFileObject = post[@"image"];
+    PFFileObject *imageFileObject = post.image;
     
+    // get image
     [imageFileObject getDataInBackgroundWithBlock: ^(NSData *result, NSError *error) {
         if(!error){
-//            UIImage * image= [UIImage imageWithData:result];
             cell.imagePosted.image = [UIImage imageWithData:result];
         }
     }];
+    
+    // get caption
+    cell.captionLabel.text = post.caption;
     
     return cell;
 }
