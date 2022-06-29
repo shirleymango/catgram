@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ComposeViewController : UIViewController <PFSubclassing, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface ComposeViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 
 @end
