@@ -67,21 +67,15 @@
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     CatCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"catCell"];
     Post *post = self.arrayOfPosts[indexPath.row];
-    PFFileObject *imageFileObject = post.image;
-//    NSLog(@"%@",imageFileObject.url);
-    NSString *urlString = imageFileObject.url;
-    NSURL *url = [NSURL URLWithString:urlString];
-//    [cell.imagePosted setImageWithURL:url];
+    PFFileObject *imageFileObject = post[@"image"];
+    
     [imageFileObject getDataInBackgroundWithBlock: ^(NSData *result, NSError *error) {
-        if (error == nil) {
-            NSLog(@"hi");
-            NSLog(@"%@",result);
+        if(!error){
+//            UIImage * image= [UIImage imageWithData:result];
             cell.imagePosted.image = [UIImage imageWithData:result];
         }
-        else {
-            NSLog(@"%@", error.localizedDescription);
-        }
     }];
+    
     return cell;
 }
 

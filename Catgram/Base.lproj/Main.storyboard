@@ -102,14 +102,23 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="441"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FWX-jo-Wfn">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FWX-jo-Wfn">
                                                     <rect key="frame" x="0.0" y="11" width="414" height="412"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="414" id="8pP-FF-wO6"/>
+                                                        <constraint firstAttribute="height" constant="412" id="GXq-lO-yHQ"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FWX-jo-Wfn" firstAttribute="leading" secondItem="mwd-w5-Lqo" secondAttribute="leading" id="0CQ-z4-S3q"/>
+                                                <constraint firstAttribute="bottom" secondItem="FWX-jo-Wfn" secondAttribute="bottom" constant="18" id="J9R-Yr-y3Q"/>
+                                                <constraint firstAttribute="trailing" secondItem="FWX-jo-Wfn" secondAttribute="trailing" id="VdM-f0-1Hf"/>
+                                                <constraint firstItem="FWX-jo-Wfn" firstAttribute="top" secondItem="mwd-w5-Lqo" secondAttribute="top" constant="11" id="hoO-QY-aJH"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imagePosted" destination="FWX-jo-Wfn" id="OKM-5j-NPB"/>
+                                            <outlet property="imagePosted" destination="FWX-jo-Wfn" id="2i1-64-iHW"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
