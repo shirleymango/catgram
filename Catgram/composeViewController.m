@@ -6,6 +6,7 @@
 //
 
 #import "ComposeViewController.h"
+#import "Post.h"
 
 @interface ComposeViewController ()
 @end
@@ -22,7 +23,8 @@
     UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
     UIImage *editedImage = info[UIImagePickerControllerEditedImage];
 
-    // Do something with the images (based on your use case)
+    // Set the imageToBePosted with selected image
+    self.imageToBePosted.image = originalImage;
     
     // Dismiss UIImagePickerController to go back to your original view controller
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -34,6 +36,15 @@
 
 
 - (IBAction)didTapSave:(id)sender {
+    [Post postUserImage: self.imageToBePosted.image withCaption: self.captionToBePosted.text withCompletion:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"success in posting ^-^!");
+        }
+        else {
+            NSLog(@"nooo cry %@", error.localizedDescription);
+        }
+    }];
+    
     [self performSegueWithIdentifier:@"backToHomeSegue" sender:nil];
 }
 

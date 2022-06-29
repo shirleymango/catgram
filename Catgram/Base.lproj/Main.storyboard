@@ -125,7 +125,7 @@
                                     <outletCollection property="gestureRecognizers" destination="6qX-kf-C4h" appends="YES" id="zUR-gj-P5R"/>
                                 </connections>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Write a caption ..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kIz-sn-HJk">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a caption..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kIz-sn-HJk">
                                 <rect key="frame" x="159" y="102" width="229" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" systemColor="systemGray2Color"/>
@@ -149,6 +149,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="captionToBePosted" destination="kIz-sn-HJk" id="D1i-4p-OdO"/>
+                        <outlet property="imageToBePosted" destination="YgX-pA-nBg" id="zWM-LV-VB8"/>
                         <segue destination="EdM-Td-VGF" kind="show" identifier="backToHomeSegue" id="UHt-mj-35J"/>
                     </connections>
                 </viewController>
