@@ -35,7 +35,7 @@
     // construct query
     PFQuery *query = [PFQuery queryWithClassName:@"Post"];
     query.limit = 20;
-
+    
     // fetch data asynchronously
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
         if (posts != nil) {
@@ -96,7 +96,7 @@
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     CatCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"catCell"];
-    Post *post = self.arrayOfPosts[indexPath.row];
+    Post *post = self.arrayOfPosts[self.arrayOfPosts.count - 1 - indexPath.row];
     PFFileObject *imageFileObject = post.image;
     
     // get image
