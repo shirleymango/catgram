@@ -7,6 +7,7 @@
 
 #import "ComposeViewController.h"
 #import "Post.h"
+#import <MBProgressHUD.h>
 
 @interface ComposeViewController ()
 @end
@@ -36,16 +37,17 @@
 
 
 - (IBAction)didTapSave:(id)sender {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [Post postUserImage: self.imageToBePosted.image withCaption: self.captionToBePosted.text withCompletion:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
             NSLog(@"success in posting ^-^!");
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+            [self performSegueWithIdentifier:@"backToHomeSegue" sender:nil];
         }
         else {
             NSLog(@"nooo cry %@", error.localizedDescription);
         }
     }];
-    
-    [self performSegueWithIdentifier:@"backToHomeSegue" sender:nil];
 }
 
 - (IBAction)getImage:(UITapGestureRecognizer *)sender {

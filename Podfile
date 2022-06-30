@@ -7,6 +7,7 @@ target 'Catgram' do
 
   # Pods for Catgram
 pod 'Parse'
+pod 'MBProgressHUD'
 
   target 'CatgramTests' do
     inherit! :search_paths
